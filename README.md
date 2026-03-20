@@ -1,0 +1,3 @@
+Pour lancer:
+        
+    go run .
