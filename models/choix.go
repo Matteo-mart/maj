@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+/*
+Permet de sélectionner l'action souhaité
+*/
 func Choix() {
 
 	for {
