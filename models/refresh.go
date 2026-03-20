@@ -6,6 +6,9 @@ import (
 	"os/exec"
 )
 
+/*
+Refresh
+*/
 func Refresh() {
 	cmd := exec.Command("sudo", "zypper", "refresh")
 	cmd.Stdout = os.Stdout

@@ -6,6 +6,9 @@ import (
 	"os/exec"
 )
 
+/*
+Mise à jour
+*/
 func Maj() {
 	cmd := exec.Command("sudo", "zypper", "dup")
 	cmd.Stdout = os.Stdout

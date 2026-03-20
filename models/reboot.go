@@ -6,6 +6,9 @@ import (
 	"os/exec"
 )
 
+/*
+Reboot
+*/
 func Reboot() {
 	cmd := exec.Command("sudo", "reboot")
 	cmd.Stdout = os.Stdout

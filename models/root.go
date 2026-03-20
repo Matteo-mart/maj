@@ -6,6 +6,9 @@ import (
 	"os/exec"
 )
 
+/*
+Mise en mode sudo
+*/
 func Root() {
 	cmd := exec.Command("sudo", "-s")
 	cmd.Stdout = os.Stdout
