@@ -1,7 +1,3 @@
-Ah, mince ! Au temps pour moi. C'est vrai que pour un projet de "mise à jour" (maj), Go est un excellent choix (très utilisé dans le monde DevOps/SRE pour sa compilation statique).
-
-Voici une version corrigée du README, toujours avec ce ton "étudiant en BTS SIO SLAM" qui présente son projet proprement pour ses dossiers d'examen.
-🚀 Projet MAJ (Go Auto-Updater)
 ## Présentation du projet
 
 maj est un utilitaire d'automatisation développé en Go (Golang). Son rôle est de gérer la mise à jour automatique de binaires ou de scripts sur un parc de machines.
@@ -31,24 +27,19 @@ Le déploiement manuel de correctifs sur plusieurs serveurs est chronophage et s
     Go (version 1.18 ou supérieure) installé sur votre machine de développement.
 
 ### Compiler le projet
-Bash
+    Bash
 
-git clone https://github.com/Matteo-mart/maj.git
-cd maj
-go build -o maj main.go
-
-### Lancer l'utilitaire
-Bash
-
-./maj --url "http://votre-serveur.com/update"
+    git clone https://github.com/Matteo-mart/maj.git
+    cd maj
+    go build -o maj main.go
 
 ## Structure du Code
 
 J'ai organisé le code de manière modulaire :
 
-    main.go : Gestion des flags (arguments) et boucle principale.
+    main.go : Gestion des flags et boucle principale.
 
-    internal/check : Logique de comparaison des versions (Semantic Versioning).
+    internal/check : Logique de comparaison des versions.
 
     internal/download : Gestion des flux de données et écriture sur le disque.
 
